@@ -1,0 +1,59 @@
+Day - 7 : Git & Github
+----------------------
+	Github Signup,Download & Install Git,Git Setup: Your Name & Email,Create a New Local Git Repository (Initialize Repository),Stage & Commit Files,Push to a Remote Repository,Clone (Download) a Remote Repository,Git Pull and Merge
+
+Version control system - Changes made to local system over a period of time, we have to maintain the version.
+
+
+Git - Version control system tracking tool with which we can make entire project code at one place to the github. (Local system)
+GitHub - It's like a godown where we keep central copy of our entire files, code, test etc.,(Remote location).
+
+--------------------------------------------------------
+
+1. Create Repo
+2. Created a folder and file in local system
+				Create a folder: 
+					make directory --> mkdir folder_name 
+				Change directory --> cd folder_name
+				Create a file:
+					touch Firstfile.txt
+        cd .. --> move to previous directory.
+        
+3. Configuraion. -  git config --global user.name "LeemaJose03"
+			git config --global user.email "leejo1803@gmail.com"
+
+4. git init - .git inside your project directory. (Its a hidden file)
+	intializes the new repo when we work on the projrct in initial stages. (only one time).
+
+a) 2 stages: 1) Staging area 2) Commit area
+
+
+5. git add . (all the files of the folder will be included)
+	git add filename (only that will be included) eg: git add firstfile.txt 
+
+6. git commit -m "Your message" 
+
+7. git status - To check the status
+
+8. git branch -m main  // not necessary, if this is used then use "git push origin main" to push the code
+
+9. git remote add origin "repo url.git"
+
+10. git push origin master 
+
+
+Clone (Download) a Remote Repository Git Pull and Merge:
+--------------------------------------------------------
+
+=> First Forking - Remote(someother person) to remote(yours) copy
+=> git clone "your url"(yours to yours) - remote to local
+	We made some changes to the files
+=> cd (to folder)
+=> git checkout -b - to set branch
+=> git remote add upstream "your url.git"
+=> git init
+=> git add .
+=> git commit -m "some message"
+=> git push -u origin (branch name)
+=> Go to your profile (compare and pull request) - verify and create pull request
+=> the person has to accept. 
