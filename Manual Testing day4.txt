@@ -1,0 +1,382 @@
+Day 4:
+------
+Types of Testing
+Agile Methodology
+
+Black Box :
+	1. Functional Testing
+	2. Non- Functional Testing
+
+Functional Testing: 
+	Based on the input given whether the app is working fine is called as Functional. 
+
+Non-Functional Testing:
+	Testing the speed and performance is called Non-functional Testing.
+	Done by Performance Test engg.,
+
+i) Performance Testing:
+	It done by giving the workload -(No.of users)
+	If the work load is within the limit then it's called as Load Testing
+	If it's beyond the limit then its called as Stress Testing.
+
+	Scalability Testing -> Increasing the no.of users and checking it's performance.
+	Stability Tresting -> Testing whether the app is stable at all situation
+
+ii) Usability Testing: GUI - Graphical User Interface. 
+	Testing the app look and feel. 
+
+iii) Compatibility Testing: 
+	Testing whether the app is working on all device, websites, OS etc.,
+
+iv) Accessability Testing:
+	Checking whether the app is accessible by everyone including differently abled people.
+
+v) Security Testing:
+	Checking for application Authentication and Authorization. 
+
+Functional Testing:
+-------------------
+	i) Smoke Testing:
+		Testing the basic or critical functionality is working fine or not.
+
+	ii) Re-testing:
+		Testing the failed test case again
+		Once the developer fixes the bug, the tester has to test again.
+
+	iii) Regression Testing:
+ 		-> Done after there is an enchancement made to the build.
+		-> Testing the addressed scope along with it's related functionality.
+
+	iv) Sanity testing:
+		Once there is an enchancement made to the build, tetsing only the enchanced part.
+
+	v) Exploratory Testing:
+		This is done by experienced person/domain expert. To find the critical bug in early stage.
+	
+	vi) Adhoc Testing:
+		The person who do this will have coding and testing knowledge.
+		They pick random functionality and do the testing.
+		Cross verification
+
+	vii) Monkey Testing: 
+		They pick random functionality and do the testing.
+		The person who do this will not have coding and testing knowledge.
+
+
+Smoke is a subset of Acceptance testing --> Because if smoke fails we will give back to the developer.
+	
+Sanity is a subset of Regression -> Testing happens when there is an enchancement.
+	
+
+
+Build ready ---> Smoke Testing ----> Test pass ---> System testing
+					Test fails ---> report it to developers ---> Re-testing
+
+Enchanced build ---> Sanity Testing ---> Test pass ---> System Testing.
+
+
+Agile Model:
+------------
+	It's a SDLC model.
+	Why? Iterative and Incermental.
+
+Advantages of Agile:
+	
+	1) It's suitable for big projects.
+		
+		Big project is divided into smaller units/chunks/iteration that i called as sprint.
+	
+150 modulues ---> 15 (each sprint) --> 10 sprints 
+
+	2) If the req's are not stable, then we can go for agile.
+
+	3) Customer interaction will be available throughout the project.
+
+Agile is an Iterative and Incremental model.
+
+Iterative Development: Software is developed and delivered to the customer,based on the feedback again the developement cycle will happen.
+Incremental Development: Software is developed in parts or increments.In each a portion of requirement is deliverd.
+
+ 
+Framework: Its a set of rules or protocols to implement anything.
+
+To implement agile:
+1) Scrum b)Kanban c) Extreme Programming(XP)
+
+Scrum: Framework used to implemet agile methodology
+
+Sprint ---> Its a continuous time boxed life cycle.
+	The duration of sprint -> 2weeks to 4 weeks.
+
+
+Agile core values:
+	Individuals and interaction over processes and tools.
+	working software over documentation
+	Customer collaboration over contract negotiation
+	Responding to the change over following a plan.
+
+
+In agile requiremenrs are called as "User stories"
+Eg: login page, UN, password,login button ----> these are called as "User stories"
+
+Collection of User story is called as Epic 
+
+E.g: UN, password,login button --- the entire login ---> login fucntionality ia calles as Epic 
+
+
+Scrum roles:
+1)Scrum Team
+2) Product Owner
+3) Scrum Master
+
+1)Scrum Team:
+	Its a self organised team
+	Its a cross functional team (bussiness, dev, tester,design)
+	Team size is 6 + or -3 
+
+2) Product Owner:
+	Who collects user stories from the client
+
+Product Backlog --> list of user stories that is not yet assigned to any sprint.
+
+3) Scrum Master:
+a) Process coach
+b) Protector
+c) Problem solver
+
+
+Taskboard --> shows the progress of the project.
+It contains:
+User story
+To Do
+In progress
+To Verify
+Done 
+
+Zero sprint: Pre-preparation step to the first sprint.
+
+Scrum Meetings:
+i) Story grooming meeting
+	story points --> measure to indicate the work to be done(hrs, days)
+
+1 user point - 3hrs
+
+1 user story -- 3 points (1 point = 3 hrs) 
+
+1 point = 4 hrs 
+
+Username ---> user story --- 3 points
+
+des --> 12 hrs ---> 3 points
+dev--> 12 hrs ---> 3 points
+test --> 16 hrs -- 4 points
+
+2. Sprint planning meeting:
+PO,SM,team --> plan for the sprint
+
+SPM ---> 2hrs * no.of weeks of sprint (3 weeks)
+	2*3 = 6hrs
+
+3. Daily scrum (stad-up) meeting:
+15 mins every day.
+
+4. Sprint review meeting:
+1hr * No.of week of sprint (2 weeks)
+1 * 2 == 2hrs 
+
+5. Sprint retropective meeting:
+1hr * No.of week of sprint (2 weeks)
+1 * 2 == 2hrs 
+
+
+Sprint backlog ---> 
+
+Spill over --> 
+
+Sprint 1 -- 20 US --> 10US completed  -- rest 10 is not completed 
+
+Sprint 2 -- 20US -- 30 US
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Agile Model:
+
+Advantages of an agile:
+
+i)It is used for big project
+
+Ans: Big project is divided in to smaller units/chunks/iteration that is called as sprint.
+
+Ex: Just consider any app, which contains nearly 150 modules. By using an agile, i can split
+that 150 as 15(each sprint)  --->15 X 10 =150 1 sprint 2 weeks -> 
+
+ii)If the req's are not stable we can use agile or if the req's gets changed in between we can use 
+this agile model.
+
+iii)Customer interaction will be available through out the project.
+
+Agile is an iterative and incremental model.
+Iterative Development: Software is developed and delivered to the customer and based on the feedback again 
+developed in cycles or releases and sprints. 
+Example: Release 1 software is developed in 5 sprints and delivered to the 
+customer. Now, the customer wants some changes, then the development team plan for 
+2nd release which can be completed in 
+some sprints and so on. 
+Incremental Development: Software is developed in parts or increments. 
+In each increment, a portion of the complete
+ requirement is delivered
+
+
+To implement the agile methodology we do have many frameworks 
+a)Scrum   b)kanban  c)Extreme Programming(XP)
+Out of these the scrum is the most commonly n widely used framework.
+
+Scrum: Scrum is the framework which is used to implement an agile methodology
+Framework: It is a set of rules or protocols to  implement anything.
+
+Sprint --->It is a continuos time-boxed life cycle.
+The duration of the sprint : It should not go beyond 4 weeks(1 month)
+
+Agile core values:
+
+Individuals and interactions over processes and tools;
+working software over comprehensive documentation;
+customer collaboration over contract negotiation; and.
+responding to change over following a plan.
+
+In agile the requirements call as "Userstories"
+Ex: In gmail, in the login functionality ,each field UN,PWD,login button ---> these are called as user story
+Collection of user story -->called as Epic
+Ex:UN,PWD,login button--> the entire login functionality is called as an epic
+
+Product owner  --> who collects the user stories from the client  -->Prepare the user stories
+
+Scrum Roles:
+i)Scrum team
+ii)Product owner
+iii)Scrum Master
+
+i)Scrum team:
+
+a)It is a self-organized team(There is no bossy culture)
+b)It is a cross-functional team (All the members(business ppl,desingers,dev,testers) all work together
+in the same place
+c)Team size is 6 + or - 3.
+
+ii)Product owner:
+a)Who collects the user stories from the client
+b)Who acts as a "bridge" b/w the client and the team
+c)Who prioritize/re-prioritize the user stories from the backlog
+d)Who will decide whether the sprint should gets releases or not.
+
+iii)Scrum Master(3 P's)
+a)Process coach
+b)Protector
+c)Problem solver
+
+
+
+Taskboard is a dashboard that shows the progress of the project.
+It contains:
+• User Story: It has the actual business requirement.
+• To Do: Tasks that can be worked on.
+• In Progress: Tasks in progress.
+• To Verify: Tasks pending for verification or testing
+• Done: Completed tasks.
+
+
+What is the Zero sprint in Agile?
+ It can be defined as a pre-preparation step to the first sprint. Activities like setting 
+development environment, preparing backlog, etc need to be done before starting the first 
+sprint and can be treated as Sprint zero.
+
+ How QA can add value to an agile team?
+ QA can provide value addition by think outside the box about the various scenarios 
+to test a story. They can provide quick feedback to the developers about whether new 
+functionality is working fine or not.
+
+
+Scrum Meetings:
+i)Story grooming meeting
+ii)Sprint planning meeting
+iii)Daily scrum meeting
+iv)Sprint review meeting
+v)Sprint retrospective meeting
+
+i)Story grooming meeting
+ Grooming is an open discussion b/w scrum team or scrum dev team and PO
+The user stories(req's) are discussed to help the team to gain better understanding abt the 
+functionality.
+Have to give story points (measure to indicate the work to be done(hrs,days)
+Have to give story points with the help of planning poker tool.
+
+1 user point - 3hr
+
+Username - user story - 2 point 
+
+des-->12 hrs --->3 story points        1 story point --> 4hrs
+dev-->12 hrs --- 3 story points 
+tes-->16 hrs --->4 s.p
+All the team members will use this tool during the story grooming meeting they will give 
+the story points.(in the fibonacci series)
+0,1,1,2,3,5,8,13,21.....
+1 story point  = 4hrs 
+ex: Login functionlaity (12 hrs)
+1Story point --> 3hrs 
+1 designer   3 dev       2 testers  --->6 team ppl
+
+des-->4      3 dev->4     2-->no we cant give 4 they give some other value
+majority -->4    they ask to 2 testers why they are not accepting, 
+if it is valid they consider that..they will
+give their opinion,
+again regrooming  --> can change their story point value
+
+2.Sprint planning meeting:
+
+PO,SM,team  -->plan for the sprint
+Like what are all the user stories they have to complete for the particular sprint,sprint duration,
+roles and responsibilities for each team member.
+SPM  --> 2hrs x No.of weeks of sprint (3 weeks)
+     -->2 x 3 = 6 hrs
+
+3. Daily scrum(stand-up) meeting:
+15 mins
+ What is the importance of daily stand up meetings?
+ Daily stand up meeting is essential for any team in which team discuss,
+1. How much work has been completed?
+2. What are the plans to resolve technical issues?
+3. What steps need to done to complete the projects etc?
+No discussions no interference
+They will discuss what they did yesterday, what they gonna do for today
+What are all the blocks/difficulties they faced.
+Scrum master will note down all the blocks.
+Once the meeting gets end they will discuss this.
+
+4.Sprint review meeting:
+1 hr x No.of weeks of sprint (2 week)
+1 x 2 --> 2hrs
+Before the release of the sprint, they(team) will give demo to the PO,client,SM
+If they are ok PO decides whether the sprint should gets released or not.
+PO may give some give modifications(enhancements) -->will gets added in the backlog (which is not yet completed)
+
+5.Sprint retrospective meeting:
+1 hr x No.of weeks of sprint (2 week)
+1 x 2 --> 2hrs
+They will discuss the lessons learned(+,or -) from the previous sprint.
+They use it for the upcoming releases.
+
+The Product backlog is maintained by the product owner which contains every 
+feature and requirement(41 user stories) of the product.
+
+sprint 4: 19 US(completed)
+
+
+Sprint backlog can be treated as the subset of product backlog which contains features and 
+requirements related to that particular sprint only.
+
+Spill over:
+If any user story which is not yet completed in the particular sprint
+we can able to move on to the next upcoming sprint
+

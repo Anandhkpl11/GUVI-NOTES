@@ -1,0 +1,190 @@
+Day 3
+
+software Testing life cycle
+QA & QC & Testing
+
+
+STLC:
+
+    Sequence of different activity performed only by testing team.
+
+1.Requirement Analysis
+2.Test Planning
+3.Test Case Development
+4.Test Environment setup
+5.Test execution
+6.Test closure
+
+
+1.Requirement Analysis:
+        Here if the testing team having any doubt they conduct a meeting with BA,Dev team,all stake holders.
+once they clerify all their doubts ,they will prepare 2 document
+
+    1.Automation Feasibility Reports:
+             if the score is above 70---> They can go ahead for automation
+             if the score is below 50---> They will go for manual
+             if the score is between 50 to 70 --> submit proof of concept.
+    
+    2.Requirement Tracebility Maxtrix :(RTM)
+             They just map all the business requirements with the test case
+
+2.Test Planning:
+      only the lead or manager will involue and they will prepare 2 document
+        
+     1.Statergy document
+              It is ahigh level document which contains the over all approach for an enthire testin process. This will be prepare by Test
+              Lead/Manager
+              It varies from org to org but inside and org it is same for all the projects.
+     
+     2.Test plan:
+              It a high level document which contains all the planning activities for an enthire test process
+              Contains:
+                     1.scope,2.objective,3.features to be tested,4.features not to be tested,5.cost and time estimation
+                     6.risk and mitigation 7staffing and training
+
+3.Test case Development:
+
+              if its a automation we will write test scripts
+              if its a manual we will write test case.
+  Test Scenario--> document which contains what are all the functionalities that needs to be tested?
+                   eg: login functionality ,signup functionality,payment,checkout.
+  Test case document----> How the functionality needs to be tested?
+                 Test step---> Step by step description to execute your test case
+
+4.Test Environment setup
+     Test bed: Confoguring the software and handware that is required for testing.
+     smoke Testing---> Build verification Testing.
+
+5.TestExecution:
+     -->Execution of the case/ scripts
+     -->Reporting the test case
+     -->Log the deffect for failed test case
+     -->Retesting of the defect
+     -->Close the defect   
+
+6.Test Closure:
+        if there is no high priority bug,test will be closed.
+        Test closure report / test summary report:
+          How many test case written
+          How many passed
+          How many failed
+          How defect were reports
+
+
+QC & QC & Testing:
+------------------
+
+Quality Assurance:
+   Set of process that hepls to avoid deffects and assure quality.
+   Ensuring that a company is providing a high quality product.
+   part of SDLC
+   whole team is responsible for that
+   preventive approach 
+
+Quality Control:
+   Set of actitives that helps to detect defects and quality issue before handing it to the customer
+   part of STLC--> Only testing team is responsible
+   finding the bug and getting it fixed
+   subset of QA
+   Rective approach
+
+Testing: Is one of the way to detect the defects.
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+Day 3:
+------
+Software Testing Life Cycle
+QA & QC & Testing
+
+STLC:
+	Sequence of different activity performed only by tetsing team.
+
+1. Requirement Analysis
+2. Test Planning
+3. Test Case Development
+4. Test Environment Setup
+5. Test Execution
+6. Test Closure.
+
+1. Requirement Analysis:
+	Here if the the testing team having any doubts they conduct a meeting with BA, Dev team, all stake holders. Once they clarify all their 
+doubts, they will prepare 2 documnents:
+
+	i) Automation Feasibility Report: 
+		if the score is above 70 ---> They can go ahead for automation
+		if the score is below 50 ---> They will go for manual
+		if the score is between 50 to 70 --> submit proof of concept. 
+
+	ii) Requirement Tracebility Matrix: (RTM)
+		they just map all the business requirements with the test cases. 
+
+
+2. Test Planning: 
+	Only the Lead or Manager will involve and they will prepare 2 documents:
+	
+		i) Statergy document:
+			It is a high level document which contains the over all approach for an entire testing process. This will be prepared by Test 				Lead/Manager.
+			It varies from org to org but inside and org it is same for all the projects. 
+
+		ii) Test Plan: Test Lead/ Manager
+			It a high level document which contains all the planning activities for an entire testing process. 
+
+			Contains:
+				a) scope b) Objective c) features to be tested d) features not to be tested e) cost and time estimation
+				f) risk and mitigation g) staffing and training. 
+
+
+3. Test Case Development:
+	If its a automation we will write test scripts
+	If its a manual we will write test cases.
+
+Test Scenario --> document which contains what are all the functionalities that needs to be tested?
+		Eg: Login Functionality, Signup Functionality, Payment, Checkout.
+
+Test case document ---> How the functionality needs to be tested?
+
+	Test steps ---> step by step description to execute your test case. 
+
+4. Test Environment Setup
+	Test Bed : Configuring the software and hardware that is required for testing.
+	Smoke Testing --> Build Verfication Testing. 
+
+
+5. Test Execution:
+	=> Execution of test case/scripts
+	=> Reporting the test result
+	=> Log the deffect for failed test case
+	=> Retesting of the defect
+	=> Close the defect
+
+6. Test Closure:
+	If there is no high priority bug, test will be closed. 
+
+	Test closure report / test summary report: 		
+		How many test cases written
+		How many passed
+		How many failed
+		How defects were reports
+
+QA & QC & Testing:
+-----------------
+
+Quality Assurance:
+	Set of process that helps to "avoid" deffects and assure quality.
+	Ensuring that a company is providing a high quality product. 
+	Part of SDLC
+	Whole team is responsible for that.
+	Preventive approah 
+
+Quality Control:
+	Set of actiites that helps to detect defects and quality issue before handing it to the customer.
+	Part of STLC  -> Only testinf team is responsible. 
+	Finding the bug and getting it fixed
+	Subset of QA
+	Reactive approah.
+	
+Testing: Is one of the way to detect the defects.
+

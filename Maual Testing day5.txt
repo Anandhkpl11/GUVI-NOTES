@@ -1,0 +1,56 @@
+https://docs.google.com/spreadsheets/d/1zptEtXcxjK8tuKU040oL0DisDYQXa5Ja/edit?usp=drive_link&ouid=106522818156056281978&rtpof=true&sd=true
+
+Bug Life Cycle:
+	Error found by tester is called Defect.
+	Accepted by developer is called bug.
+
+1. New ---> When the bug is identefied
+2. Assigned ---> When its assigned to a dev
+3. Open ---> When the developer starts to work on the reported bug
+4. Pending Retest --> If the tester is occupied with other work
+5. Retest --> Tester will restest the changed code.
+6. Reopen --> If the bug is still present even after developers change
+7. Verfied --> Verify whether all the reported bugs are fixed.
+8. Cloed ---> Once all the bugs are fixed. 
+
+Rejection Reason:
+
+1. Duplicate Bug--> Same bug reported twice. 
+2. Not a bug -->
+3. Deferred --> Postponing the bug fix to next realease based on the priority .
+4. Reject -- > Not a geniune bug 
+
+High Priority and High Severity : E.g Google search button is missing.
+
+Low Priority and Low Severity: Colour mismatch, Spelling mistakes.
+
+High Severity and  Low Priority: 
+
+Low Severity and High Priority: Logo mismatch
+
+Category of defects:
+--------------------
+
+Blocker user defect: Defect that blocks the user from using the app further 
+Cosmetic defect: colour mismatch, spelling mistake.
+wrong :
+missing
+extra
+
+Bug release : Releasing the product with the known low priority defect.
+Bug leakage : Product is released, but the defect is found by the end user. missed by tester. 
+
+
+Severity – Measure to indicate the impact of the bug on software product
+Priority-Refers to how urgently a bug needs to be fixed 
+Examples:
+High Severity High Priority – An error which occurs on the basic functionality of the application and will not allow the user to use the system
+Ex: i) When the user is not able to login to the application 
+      ii) Google search button is missing
+Low Severity Low Priority – Color mismatch, any cosmetic issues or spelling mistakes
+High Severity Low Priority – 
+Ex: i) Application working fine on latest versions of browsers but on older version not interactable or user friendly. This is high severity bug which affects the functionality and people of using older versions could be low.
+      ii) Web page not found when user clicks on a link (user&#39; does not visit that page generally)
+Low Severity High Priority – 
+Ex: i) Buy Now button is not fit in page for chrome, with 100% view, only after setting the zoom size to 70%, buy now is visible. It doesn’t affect the functionality but it affects the user experience.
+     ii) Logo mismatch is also an example. It doesn’t affects the functionality of an application, but still we have to give priority to our client/customer so it’s an example for low severity and high priority defect.

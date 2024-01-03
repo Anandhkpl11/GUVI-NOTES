@@ -1,0 +1,376 @@
+Manual day2
+-----------
+
+SDLC Models:
+------------
+
+Waterfall Model:
+     Linear sequential model.
+     Without completing the previous phase,the text phase cannoy be started.
+
+Where to use?
+      => Small project
+      => When the requirements are stable.
+
+Advantages:
+       => Each phase is clearly defined.
+       => Each phase is completely done one at a time.
+       => cost and time is calculate before the start
+
+Disadvantages:
+
+       => Adapting changes to the requirement.
+       => Client intraction will not be available throughtout.
+
+V-Model:  Verification and validation 
+--------
+
+     Verification--> static testing-->don't execute anything just check
+     Validation ---> Dynamic testing--> execute the steps
+
+Are you buliding product right?--- VerificationAre you buliding the right product?--- Validation 
+
+
+Where to use?
+        => Requirement can change but not too frequently.
+        => High success rate compare to waterfall model.
+        => Development and testing can happen parelelly.
+
+
+Disadvantages:
+       => Requirement can't change frequently
+       => When the projects are large and complex v-model is not preferble.
+        
+
+Agil Model:
+----------
+
+     Iterative and Increment 
+     When we can go? When requirement gets changed
+
+Term Agil means--> The ability of respons to change from requirement, technology and people.
+
+
+
+Spiral Model:
+-------------
+
+       It's Combination of waterfall and iterative model.
+       Each phase begins with desgin goal and end with client reveiwing.
+       Software is developed in a series of incremental relases.
+
+Phase 1: Communication
+Phase 2: Planning
+phase 3: Modeling
+Phase 4: Construct
+phase 5: Deployment
+1st spiral -> concept development
+2nt spiral -> system development
+3rd spiral -> system enhancement
+4th spiral -> system maintenance
+
+
+When to use?
+       =>large  project
+       =>When releases are required to br frequently
+       => When requirements are unclear and complex
+       => Formedium to high risk project
+
+
+
+Advantages:
+
+        =>Additinal functionality or change can be done later stage
+        =>Cost estimation bacome easy
+        =>Development is fast and feature are added in a systematic way
+        => There is always a space for customer feedback
+
+Disadvantages:
+
+        => Documentation is more
+        => Risk is not meeting on budget.
+
+
+Test case Desgin Techniques:
+
+   We can not test all the possible way, so we use techinques ot obtain required test data to be tested.
+   Reduce the size of input and obtain the best input.
+
+We have 2 categories:
+
+     => Static Technique --> line by line review of test case document
+             -> Review   
+                 -> Informal review->Domain expert
+                 -> Walkthrough -> peer review
+                 -> Technical review -> Tech lead
+                 -> Inspection ->  Formal review
+            
+              -> Static Analysis
+                 -> Using exteral tool review will happen
+
+     => Dynamic techinque
+             To test the fanctinality we will give input and test
+
+1.Equivalance class partitioning
+2.Boundary Value Analysis
+3.Decision Table Testing
+4.State Transition Testing
+5.Use case Testing
+
+
+1.Equivalance class partitioning
+   range is 1-40--> You can partition the range of value in to equal classes
+
+2.Boundary Value Analysis
+3.Decision Table Testing
+4.State Transition Testing
+5.Use case Testing
+ 
+
+
+
+Level of Testing:
+
+1. Unit Testing:
+    -> It's done by developer
+    -> Testing the individual part is called unit testing.
+    -> Unit testing comes white Box testing.
+    -> code testing is called as unit testing.
+
+2. Integration  Testing: combine, consolidate
+    -> Combining the logically related modules togehter abd perfirming the testing is called integration
+    -> To check the date flow/ connectivity
+    -> To check whether our application is moving from one page to another/ on app to another.
+    -> Done either by developer or tester
+    -> comes under grey box testing
+
+3.System Testing:
+    -> end to end testing,from login to logout
+    -> done by tester
+    -> come under black box testing
+
+4.Accptance Testing
+    -> internal Acceptance --> Alpha testing---develpoer site.---person who is not involved in the product.
+    -> extranal --> UAT-> Beta Testing--> end user site.
+     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Day 2: 
+------
+SDLC phases-Requirements Phase,Analysis Phase,Design phase,Coding Phase,Testing phase,Delivery and Maintenance Phase
+SDLC Models-Waterfall Model.,V Model,Agile Model,Spiral Model.
+Test Case Design Techniques-
+Levels of Testing
+
+SDLC Models:
+------------
+
+Waterfall Model: 
+-----------------
+	Linear sequential model. 
+	Without completing the previous phase, the next phase cannot be started. 
+Where to use?
+	=> Small project
+	=> When the requirements are stable.
+
+Advantages: 
+	=> Each phase is clearly defined.
+	=> Each phase is completely done one at a time.
+	=> Cost and time is calculated before the start.
+
+Disadvantages:
+	=> Adapting changes to the requirement
+	=> Client interaction will not be available throughout.
+
+V- Model:  Verfication and Validation
+---------
+Verfication -> static testing -> don't execute anything just check
+Validation -> Dynamic testing -> execute the steps. 
+
+Are you builing the product right? - Verification 
+Are you building the right product? - Validation 
+
+Login -> UN, password -> UN -> 30 chars , pass -> 8 chars 
+
+Where to use?
+	=> Requirement can change but not too frequently.
+	=> High success rate compared to waterfall model
+	=> Development and testing can happan paralelly.
+
+Disadvantage:
+	=> Requirement cannot change frequently
+	=> When the projects are large and complex V-model is not preferable.
+	=> 
+
+Agile Model: 
+------------
+	Iterative and Incremental 
+	When we can go? When requirement gets changed.
+	
+Term agile means -> the ability of response to changes from requirements, technology and people.
+
+
+Spiral Model:
+-------------
+	It's combination of waterfall and iterative model. 
+	Each phae begins with design goal and ends with client reveiwing.
+	Software is developed in a series of incremental releases.
+
+Phase 1: Communication 
+Phase 2: Planning 
+Phase 3: Modeling 
+Phase 4: Construct
+Phase 5: Deployment
+
+1st spiral -> concept development
+2nd spiral -> System development
+3rd spiral -> System Enhancement
+4th spiral -> System Maintenance.
+
+When to use? 
+	=> Large project
+	=> When releases are required to be frequently 
+	=> When requirements are unclear and complex.
+	=> For medium to high risk project.
+
+Advantages: 
+	=> Additional functionality or changes can be done at later stage.
+	=> Cost estimation becomes easy
+	=> Development is fast and features are added in a systematic way.
+	=> There is always a space for customer feedback
+
+Disadvantages: 
+	=> Documentation is more
+	=> Risk is not meeting schedule on budget. 
+
+
+Test case Design Technique:
+
+Login -> UN, password -> UN -> 30 chars , pass -> 8 chars 
+
+L
+LE
+LEE
+
+1st test data - with 30 characters  - Allow me to login  - Positive test case.
+2nd test data - with 31 characters  - It should show me the error. - Negative test case. 
+
+We cannot test all the possible way, so we use techniques to obtain the required test data to be tested.
+Reduce the size of input and obtain the best input. 
+
+We have 2 categories:
+	=> Static technique  -> line by line review of test case document
+		-> Review 
+			=> Informal Review -> Domain expert
+			=> Walkthrough -> Peer review 
+			=> Technical review -> Tech lead 
+			=> Inspection -> Formal review
+
+		-> Static Analysis
+			=> using external tool review will happen. 
+
+	=> Dynamic technique
+		To test the functionality we will give input and test.
+
+1. Equivalance Class Partitioning
+2. Boundary Value Analysis
+3. Decision Table Testing
+4. State Transition Testing
+5. Use Case Testing
+
+1. Equivalance Class Partitioning:
+
+Login -> UN -> 1 to 40 chars 
+
+range is 1 - 40 --> You can partition the rage of values in to equal classes
+
+1 to 10    11 to 20     21 to 30    31 to 40  -> 4 class (valid condition) ---> positive testing
+
+Below 1   Above 40  ---> 2 classes (invalic condition) ----> negative testing
+
+1st test data - 1 to 10 chars   - Leema 
+2nd -> 11 to 20 chars - 
+3rd -> 21 to 30 chars
+4th -> 31 to 40 chars 
+
+2. Boundary value analysis:
+
+Login -> UN -> 1 to 40 chars 
+
+A -> 1 -> minimum boundary
+B -> 40 -> maximum boundary 
+
+A-1, A, A+1,B-1,B,B+1
+
+0,1,2,39,40,41
+
+0 AND 41 - Negative test case
+
+1,2,39,40 - positive.
+
+3. Decision Table Testing
+---------------------------
+Formula: 2^n  ---> n = no.of test conditions we have (i/p)
+
+UN and pass -> 2 condition ----> 4 condtions
+
+Example: 2 condtion to vote
+	1. He/She should be an Indian Citizen
+	2. His/her age should be above 18
+
+2^n - 4 test cases
+
+4. State Transition Testing
+---------------------------
+
+
+5. Use Case Testing
+	Digramatic representation of the document
+	
+
+Basic user    
+Permimum user 	
+
+2 use case :
+Listen to the song
+Skip the ad
+
+
+Basic -----> Listen to the song use case
+Permimum user --->Listen to the song use case
+		----> Skip the ad
+
+
+Levels of Testing: 
+
+1. Unit Testing: Smallest part is unit
+	-> It is done by developers
+	-> Testing the induvidual part is called unit tetsing.
+	-> Unit testing comes under white Box testing
+	-> Code testing is called as unit testing
+
+2. Integration Testing: Intergrate -> combine, consolidate
+	-> Combining the logically related  modules togehther abd perfirming the testing is called Integration
+	-> To check the data flow/ connectivity.
+	-> To check whether our application is moving from one page to another / one app to another.
+	-> Done either bu developer or tester.
+	-> Comes under grey box testing
+
+3. System Testing:
+	-> End to end testing , from login to logout
+	-> Done by Tester
+	-> Comes under black box testing
+
+4. Acceptance Testing:
+	1. Internal Acceptance -> Alpha tetsing -> Developer site. -- Person who is not involved in the product.
+	2. External Testing -> UAT -> Beta Testing -> end user site. 
+
+
+
+
+
+
+
+
+
