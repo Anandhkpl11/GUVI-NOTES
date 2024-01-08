@@ -1,0 +1,213 @@
+Day - 9
+-------
+Control statements,Looping
+Arrays, Strings Class,Access modifiers
+
+Operators: Special symbols, that is used to perform specific operation on one or more operands.
+
+a + b
+
+a,b --> operands
++ --> operator 
+
+Arithmetic  --> +,-,*,/,%
+Assignment  --> =, =+, =-, =%, =*
+	c = a + b;
+	c = 10;
+	c =+ 5;
+	c ---> 5;
+
+Comparison  --> < , > , <=, >= , == ,!= (not equalto)   --> a =10; b=20; ---> a != b  -- ans: true 
+Logical  --> && , || , !
+Unary  --> perfix,postfix --> ++a, --a, a++, a--   ===> a =10; --> a++;  
+Ternary --> ? : 
+
+Control statements
+------------------
+
+if statement
+if else
+nested if
+switch case
+
+
+
+Project --> package --> class 
+
+Class syntax:
+	access-specifier class(keyword) class_name {
+	
+	body of the class
+
+}
+
+e.g: public class ControlStatements {
+
+}
+
+
+if statement: 
+
+Syntax:
+	
+	if(condition) {
+		block of code
+}
+
+...
+...
+
+if else:
+
+	if(condition){
+
+		block of code
+
+} else {
+	else block of code
+}
+
+
+Nested if: if inside a if
+
+If the inner condition satisfies then only outer if will be executed.
+
+	if(condition) {
+		if(condition){
+			if(condition){
+				block of code
+
+		}
+	}
+}
+
+if-else-if
+
+Syntax:
+	if(condition)
+		statement
+	else if(condtion)
+		statement
+	else if(condition)
+		statement
+
+	.
+	.
+	.
+	else 
+		statement
+
+
+Switch case:
+
+	switch(expression){
+		case 1:
+			//block of code
+		break;
+		
+		case 2:
+			//block of code
+		break;
+		
+		default:
+			//block of code
+}
+
+
+Looping:
+
+	As long as the condition return true the loop will run, once the condition becomes false, it will
+come out of the loop.
+
+	while (condition){
+		block of code
+	}
+
+
+For loop
+
+	Syntax:
+		for(intialization; condition; increment/decrement){
+		
+		}
+
+
+*
+* *
+*   *
+*     *
+* * * * *
+
+Step 1: No.of rows == No.of times the outer loop should run
+Step 2: No.of columns == No.of times the inner loop should run 
+Step 3: what needs to be printed -- > *
+2 dimensional array 
+
+do while:
+	
+	do{
+		//statement
+	} while(condition);
+
+
+Array: 
+
+
+package day9;
+
+import java.util.Scanner;
+
+public class ArraySample {
+
+	public static void main(String[] args) {
+		
+		// Data structure that allows you to store multiple values of same data type.
+		// Collection of similar data type. 
+		
+		// 1. 
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int[] numbers;   // declartion
+		
+		numbers =  new int[2]; // initalize the size of array
+			
+		// 2. 
+		
+		int[] nums = {10,20,30};
+		
+		//System.out.println(numbers.length);
+//		for(int i =0; i<numbers.length; i++) {
+//			
+//			System.out.println("Enter a vale");
+//			numbers[i] =  sc.nextInt();
+//			
+//		}
+		 
+		System.out.println(nums.length);
+		
+		for(int num : nums) {
+			System.out.println(num);
+		}
+		
+	
+		String name = "Guvi";   // ivuG
+		
+		// charAt(0); 
+		System.out.println(name.length());
+		for(int i=0;i<name.length();i++) {
+			
+			System.out.print(name.charAt(i));
+		}
+		
+		//num % 2 ==0   -- even number
+		
+		madam
+		madam
+	}
+
+}
+
+
+
+
