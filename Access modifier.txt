@@ -1,0 +1,19 @@
+Access Modifiers:
+	Allows to set the scope or accessibility or visibility of data member be it a field or class or method or constuctor. 
+
+Default
+Public
+Proteted
+Private. 
+
+Default: 
+	when access is not specified, it is considered as default. The scope of the default level is within the package. 
+
+Public: 
+	The particular entity is accessible throughout from within or outside the class, within or outside the package.
+
+Protected:
+	Allows access to entities through subclass of the class in which entity is declared. 
+
+Private:
+	Not accessible outside the class. 

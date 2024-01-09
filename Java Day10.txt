@@ -1,0 +1,83 @@
+Day 10:
+
+OOPS Concepts
+Class & Object Creation 
+Constructor,Methods,
+Use of Static and Instance
+
+Class and Object: 
+	
+	Building  --> Object -- real world entity. 
+	Blue print --> Class 
+
+Knows something 
+Does something 
+
+Eg: Class  -- behaviour of an object 
+
+2 things: 1. Variable 2.Methods
+
+Object creation:
+----------------
+Calc obj = new Calc();
+
+Calc --> class name
+obj --> reference/object name
+new --> allocate the memory
+Calc() --> default constructor that tells us how much memory is required. 
+
+Types of Variables:
+------------------
+Variable --> container that stores the value. Using variable we can perform certain actions.
+
+Instance variable  --> Inside class and outside the method.
+Local Variable  --> present inside the method.
+Static variable --> value will not be changed.
+
+Methods:
+--------
+	-> Block of code which executed when it's called.
+	-> You can pass data to methods, which is known as parameter.
+	-> Method has a return type --> if it's not returning anything - void
+	-> Why ? ---> To reuse the code: define the code once, make it use many times.
+	
+How to call a method of a class:
+
+1. We can call a method using class name --> when the method is declared as static
+2. We can call a method by creating object --> when the method is not a static method. 
+
+Ex:
+---
+
+1. Create a class -- Calc
+
+2. 3 methods --> add(), sub(), mul()
+	add() -- void
+	sub() -- return type
+	mul() -- static
+
+3. 3 variable --> 2 variable to perform the operation and 1 to store the result. 
+
+O/p:
+----
+The addition value is: 
+The subraction value is:
+The multiplication value is: 
+
+
+
+
+Constructor:
+	-> special method
+	-> member method 
+	-> constructor name will be same as the class name.
+	-> it will not return anything.  
+	-> To create an Object you need a constructor.
+	-> Whenever we create an Object we need to create a constructor so that memory allocation can happen.
+		java will provide that to us, that is called as default constructor.
+	-> When the Object is created constructor will be called.
+	-> Used to allocate memory to an object.
+
+2 types:
+	1. Default constructor
+	2. Parameterized constructor.
