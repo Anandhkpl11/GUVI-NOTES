@@ -1,0 +1,79 @@
+Day 13: Exception
+-----------------
+Introd
+uction to Exceptions
+What is Exception and Exception Handling?
+Types of Exceptions
+Use of Try-Catch-finally blocks
+Throw and throws keyword
+User defined eception.
+Exception - Event that disrupts the normal flow of program.
+Throwable - super class
+1. Exception - we can handle
+1. Checked Exception - Java itself will know it might throw an exception. Also it will
+allow the user to handle.
+1)IOException
+2)SQLException
+3)FileNotFoundException
+2. Unchecked Exception - It will not make compulsory for user to handle it. If they can,
+they can
+handle it or they can leave it unchecked.
+1)RunTimeException
+1)ArithmeticException
+2)ArrayIndexOutOfBound Exception
+2. Error - we cannot handle.
+Statement - Line of code
+1) Normal
+2) Critical
+Try-catch:
+1) Divide by 0 without try-catch
+2) Divide by 0 with try-catch
+3) Having a statement in try blocks
+4) Print Custom message.
+5) Use parent class in catch block.
+Multi-catch block.
+------------------
+For one try block we can have multiple catch blocks.
+If you have to perform different tasks at the occurence of different execptions, use java
+multi-catch
+block.
+At a time only one exception can occur and only one catch block is executed.
+All catch block must be ordered from more specific to general.
+Throws:
+-------
+It is used to suppress the exception. It will not handle, it will suppress (stop).
+a()-> calls b() -> calls c() - In c() we are having an exception.
+1. Either c() can handle exception using try-catch block.
+2. Or it can throw the exception to b()
+3. b() throws the exception to a().
+4. a() has to handle.
+throw - Forcefully throw the error.
+k = i/j;
+j > 1
+throw new ArithmeticException
+Throw Vs
+throws
+-----------------
+1) Throw keyword is used to throw an exception Throws keyword is used in method signature
+to declare
+explicitly in the code insite the method. an exception. which might be thrown by the method
+while
+execution of code.
+2) Syntax :
+throw followed by the instance of The throws keyword is followed by class name
+of Exceptions
+Exception to be thrown to be thrown.
+throw new Exception void
+method_named throws Exception
+Finally:
+Used to execute important code such as closing the connection etc.,
+Even if you don't handle the exception, JVM executes the finally blocm before terminating the
+block.
+Why?
+its used to put the cleanup code such as closing a file , closing a connection.
+The important statements to be printed can be placed in finally block.
+Only one finally block we can have.
+User-defined Exception:
+-----------------------
+We need to write the constructor that takes the String as error message and it is used to call
+parent class constructor.

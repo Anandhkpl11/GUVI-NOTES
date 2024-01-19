@@ -1,0 +1,118 @@
+Day-11:
+-------
+Features of OOP'S: - Object Oriented Programming
+Inheritance
+Abstraction
+Polymorphism-Overloading and Overriding
+Encapsulation-Getter and Setter Methods
+
+Inheritance: 
+	2 dev (A and B) -- each are working on req 
+		B --> 	when you need to reuse the code of A class to B class we can extend the A to B.
+Accquiring all the methods and properties of another class. 
+
+Parent class  -- A
+Child class -- B
+
+Super class -- A
+Sub class -- B
+
+Base class  -- A
+Derived class -- B
+
+Types of Inheritance:
+
+1. Single inhertance -- One parent and one child ---  A ---> B
+2. Multi-level inheritance -- A --> B --> C
+
+3. Multiple inheritance   ---> Interface
+
+A      B
+ 
+   C   --- extends  A , B
+
+4. Hierarchy Inheritance  -- One parent and two child
+
+	A
+    
+    B      C   ---  B extends A    ,   C extends A
+
+5. Hybrid   -- Combination of Multiple and Hierarchy inheritance
+
+		
+Polymorphism:
+	Ability of an object to take multiple form.
+2 types:
+	Method overloading (Compile-time polymorphism)  -- Same method name, different parameter list and different data type.
+	Method overriding (Run time polymorphism)  -- Same method name and same parameter list. 
+
+Method Overloading  VS Method Overriding
+
+1. No inheritance       1. Atleat 2 class --> 1 parent and 1 child
+2. Method definition    2. Method definition should be same.
+   should not be same
+
+
+
+Abstraction: 
+	Taking the important stuff and hiding the others.
+
+2 ways:
+1.Abstract class  (0 to 100%)
+2.Interface (100%)
+
+
+public void add(int n1,int n2){  --- implemented method. 
+	
+	int result = n1+n2;
+	//implementation 
+}
+
+public abstract void add();   --> unimplemented method.
+
+1) Abstract method is only declared not defined.
+2. Abstarct class can have abstract method.
+3. Object cannot be created fro abstract class. Conrette class object can be created.
+
+
+
+4 methods:
+
+public abstract class Initial{
+
+	public void call(){
+	
+	}
+
+	public void text(){
+	
+	}
+
+	public void camera(){
+
+	}
+
+	public abstract void location();
+
+}
+
+public class SecondClass extends Initial{  // Concrette class
+
+	public void location(){
+
+	}
+
+}
+
+Encapsulation:
+	Binding the data with methods. Only way to access the variable is through methods.
+	If you want to access the variable only through methods without using object then you can use
+	getters and setters method. 
+
+Why?
+	For safe data
+	We can keep data in private. 
+
+this keyword:
+	To mention that the variable is the instance variable and not local variable when we are assigning some 
+	variable name.

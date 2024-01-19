@@ -1,0 +1,64 @@
+Day-12:
+-------
+Difference  b/w Abstract class & Interface
+Interface Implementation
+Regular Expression 
+Java Streams
+
+Interface:
+	When you want to have only abstract methods you can go for interface. 
+	By default, the methods of interface will be public and abstract.
+	Its not a class. 
+	Object cannot be created. 
+	When you want to use interface, use "implements" keyword
+	The fields/variables in interface by default they are static and final. 
+	
+Why static and final?
+	Static --> Objects cannot be created for interface, so to access the interface variables without object
+			they are static. 
+	final -> Interface cannote have it's own memory so it is given as final.
+
+Ex:
+
+1. Create 3 interfaces - have 2 methods
+2. One interface should extend the other.
+3. Have 1 abstract class
+4. Have a concrette class
+5. Create object for concette and excute all the method.
+
+Regular Expression:  -- Regex
+	"This is day11 class" --> day11 is present or not.
+		contains();
+
+pass --> alphanumeric  -- 8 letters, 2 numbers, 1 special.
+"Leemajos@12"  -- craete a formula
+
+API for defining string pattern that can be used for searching, manipulating and editing a string in java.
+
+java.util.regex;
+
+	1. Pattern class -> Defines a pattern(to be used in a search).
+	2. Matcher class -> Used to search for the pattern.
+	3. PatternSyntaxException -> Indicates syntax error in regular expression pattern.
+
+Pattern.compile(); -- it describes what is being searched.
+matcher() - used to search for a pattern in a string. 
+find() - returns true if the pattern was found in the string and returns false if it's not found.4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
