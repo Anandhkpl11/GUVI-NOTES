@@ -1,0 +1,91 @@
+Day 15:
+-------
+Set
+Hashmap, Hashtable, TreeMap
+Java Streams
+
+Set:
+- It's an interface
+- Does not allow duplicates (only unique)
+- Single dimensional
+- Dynamic array
+- Implementation classes:
+	-> HashSet
+	-> LinkedHashSet
+	-> TreeSet
+
+HashSet:
+	-> Uses Hashing algorithm
+	-> Gives random result, very fast.
+
+LinkedHashSet:
+	-> Maintains insertion order
+
+TreeSet:
+	-> Order result ->Numeric order , Alphabetical order (ASCII value)
+
+Map Interface:
+--------------
+Collection API --
+	1. Collection Interface 
+		1. List Interface
+		2. Set Interface
+	2. Map Interface
+
+1. Does not extend collection interface, it's part of collection API.
+2. Instead of index to value, we have a name i.e. key.
+	For each value we can key i.e : Key-value pair.
+3. Each key-value pair is an Entry. 
+4. Does not allow any null key or value. 
+5. Keys are unique --(Set) .Value can be duplicated  --(List).
+6. Map uses put method to add elements.
+7. Map is basically a key-value pair.
+
+Implementaion classes:
+	1. HashMap
+	2. LinkedHashMap
+	3. TreeMap
+`	4. HashTable
+
+HashMap:
+1. It's not thread safe, unsynchronized
+2. It's fast
+3. Allows one null key.
+4. No insertion order
+5. Works with single thread.
+
+HashTable:
+
+1. It's thread and synchronized.
+2. It's slow
+3. No null key is allowed
+4. No insertion order
+5. Works with multi thread
+
+LinkedHashMap: 
+- It maintains insertion order
+- One null key and two null values
+
+TreeMap:
+- It maintains ascending order (ASCII values) based on key
+- No null keys allowed
+
+Java Streams: Java 8
+	Without changing the original value, to work values that are present we go with steam.
+	Stream can be consumed only once, we cannot reuse it.
+
+Lambda Expression:
+	Short block of code which takes in parameters and return value
+
+	syntax: 
+		parameter -> expression 
+
+nums.stream()
+			.filter(n-> n%2==0)
+			.map(n-> n*2)
+			.sorted()
+			.forEach(n-> System.out.println(n));
+		
+
+
+	

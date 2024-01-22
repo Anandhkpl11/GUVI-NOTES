@@ -1,0 +1,144 @@
+Day: 14
+-------
+Java Packages:
+Package Creation,Structuring and Organizing code.
+Collections:
+Introduction to Collections API
+What is Collection Framework?
+ArrayList,Vector,Stack,list,set& Map
+Hashmap,Hashtable,TreeMap
+
+Java Packages:
+
+	-Is a group of similar types of classes, interface and sub-packages.
+
+2 types:
+1. In-built eg: java, util,io, sql,awt etc.,
+2. User defined - which we create
+
+Eg: java.util.Scanner;
+
+java - main package
+util - sub package
+Sacnner - class
+
+How to access packages from another packages?
+
+3 ways:
+
+1. import packagename.classname;
+	Only the specified class will be accessible.
+
+2. import packagename.*;   --->  java.*;   
+				2 things: eg: 1 subpackage - util , 1 class Classname
+	all the classes and interface of this package will be accessible but not the subpackage.
+
+3. fully qualified name
+	Only declared class of this package will be accessible. No need to import.But we need to use
+	fully qualified name everytime when accessing the class or interface.
+
+Advantages:
+	-> Used to categorize the class and interface so that we can easily maintain.
+	-> Provides access protection.
+
+Collections:
+
+int a=10;
+Array:  int[] a = new int[5]; 
+
+Drawback: 1. Size of an array is not adjustable
+	  2. You can only store data of similar type.
+
+Collection API - concept.
+	To implement data structure using in-built function. 
+
+Collection Interface:
+---------------------
+java.util  - package
+
+-> It's an intereface.
+-> It's a Framework --> set of rules and protocols.
+-> Dynamic in size(it may grow or shrink).
+-> To store and manipulate group of objects.
+-> Group of Objects.
+
+Collection:
+	1. List Interface
+		1. ArrayList
+		2. LinkedList
+		3. Vector
+		4. Stack
+
+	2. Set Interface
+		1.HashSet
+		2.LinkedHashSet
+		3.TreeSet
+
+	3. Map Interface
+		1.HashMap
+		2.LinkedHashMap
+		3.TreeMap
+
+
+1.List Interface:
+	-> Dynamic in nature
+	-> It's based on insertion order.
+	-> It contains index based methods.
+	-> java.util 
+	-> List allow duplicates
+	-> We need implementation classes:
+		1. ArrayList
+		2. LinkedList
+		3. Vector
+		4. Stack
+
+1. ArrayList: 
+
+- It's a class
+- It's a resizable array
+- It uses index
+- Searching is easy but insertion and deletion is hard.
+
+int,short,boolean,char,long,float,double
+primitive data ----> we can use primitive data type
+
+Wrapper class
+In collection, everything is stored as Objects --> we cannot use primitive data type to define an object.
+
+int  -> Integer
+short -> Short
+boolean -> Boolean
+
+Syntax:
+	ArrayList<Object> arrayname = new ArrayList<wrapperclass>();
+
+NUmber --> Integer
+String -> String
+
+Object --> will allow you to store all types of object.
+
+2. LinkedList:
+
+	- It uses node  -- it will have data and the address of the next element.
+	- Insertion and deletion is easy but searching hard.
+
+3. Vector
+	- It is thread safe
+	- Vector is synchronized.
+1 method
+
+4 object--> 
+
+What is synchronization?
+	When multiple job/thread access the method at same time, it has to be synchronized so that ecah job
+	can complete their process without any interruption.
+
+4. Stack:
+	Last In first out
+
+push() -- is used to insert the element
+peek() -- is used to retreive the last element
+pop() -- is used remove the last element
+
+
+
