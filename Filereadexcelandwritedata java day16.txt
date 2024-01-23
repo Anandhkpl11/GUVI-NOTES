@@ -1,0 +1,98 @@
+Day 16:
+-------
+Excel File access
+Reading, writing, count etc with XLS files(Apache POI)
+
+-> There are no package available in java that supports excel
+-> We need 3rd party support ---> Apache POI
+-> Meven repo --> one place for all dependency 
+-> To add maven dependency you need to create maven project.
+-> in pom.xml --> before </project> close add a dependencies tag inside paste the copied denpendency.
+
+Apache -> Powerful office suite 
+	It had Java API -> for working with Microsoft office.
+
+
+WriteExcel:
+-----------
+XSSFWorkbook book = new XSSFWorkbook();
+		XSSFSheet sheet = book.createSheet();
+		
+		Object[][] data = {
+				
+				{"Name","Age","City"},  // 1 array
+				{"Ajay",20,"Delhi"},   
+				{"Akash",25,"Chennai"},
+				{"Anbu",23,"Mumbai"}			
+		};
+		
+		int rowCount =0;
+		
+		for(Object[] row1 : data) {
+			
+			XSSFRow row = sheet.createRow(rowCount++);	
+			
+			int columnCount=0;
+			
+			for(Object col: row1) {
+				
+				XSSFCell cell = row.createCell(columnCount++);
+				
+				if(col instanceof String) {
+					cell.setCellValue((String) col);
+				} else if(col instanceof Integer) {
+					cell.setCellValue((Integer) col);
+				}
+				
+				
+			}
+		}
+		
+		try(
+			FileOutputStream output= new FileOutputStream("D:\\EclipseClass\\ExcelFileOperation\\src\\main\\java\\day16\\FirstFile.xlsx");){
+			book.write(output);
+		}
+		
+    
+  ReadExcel:
+  ----------
+  public class ReadExcel {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		XSSFWorkbook book = new XSSFWorkbook("D:\\EclipseClass\\ExcelFileOperation\\DataBook.xlsx");
+		XSSFSheet sheet = book.getSheetAt(0);
+		
+		int rowCount = sheet.getLastRowNum();
+		int columnCount = sheet.getRow(0).getLastCellNum();
+		
+		String[][] data= new String[rowCount][columnCount];
+		
+		// Get into row
+		
+		for(int i=1;i<=rowCount;i++) {
+			
+			XSSFRow row = sheet.getRow(i);
+			
+		// Get into cell
+			
+			for(int j=0;j<columnCount;j++) {
+				
+				XSSFCell cell = row.getCell(j);
+				
+				//read the data from excel
+				
+				data[i-1][j] = cell.getStringCellValue(); // i =1 , j=0  -- i=0 j=0
+				
+				System.out.println(cell.getStringCellValue());
+				
+			}
+			
+		}
+		
+		book.close();
+		
+		
+	}
+
+}

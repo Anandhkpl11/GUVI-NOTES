@@ -4,3 +4,5 @@ decisions Table  https://docs.google.com/spreadsheets/d/1-_LDUA5-FWacymu4VQVY_9h
 jira net banking https://docs.google.com/document/d/1bUaoQCd93nTGptiST2Fjto0DjR81TjogNoIwip0XP1w/edit
 git task https://docs.google.com/document/d/1S9MP5ZqhoPYfh3Oixg3bpEXB_QDZ8tVhBtuotu8UZhA/edit
 Regex  https://docs.google.com/spreadsheets/d/1U5ZLSqILIYbfHbEMpzpEuOYY3PlvrlT_pZUEncJUSVQ/edit#gid=0
+
+codekata and webkata link  https://drive.google.com/drive/u/0/folders/1tIjxVC7U9AqXXQCVTfm_3WwwXf1CQVu6
