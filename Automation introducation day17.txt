@@ -1,0 +1,73 @@
+Day 17:
+-------
+What is Automation Testing?
+When to go for Automation?
+Different Automation Tools
+Advantages of Automation
+Criteria for Automation Test Cases
+Difference between Manual Testing and Automation Testing
+
+
+When to go for Automation?
+	When we have repititive and complex testcase.
+
+1. Regression Testing
+2. Performance Testing
+3. Data Driven Testing - Driving testcases using data
+4. GUI Testing 
+
+Different Automation Tools
+1. Selenium - Functionality, web applications. 
+2. Appium -> Mobile testing
+3. SOAP UI -> API Testing
+4. Jmeter -> Performance testing
+5. UFT -> Functional and regression
+6. TestComplete 
+7. TestCafe
+8. Cucumber - BDD 
+
+	Given: The scenario
+	when valid un and valid pass is entered
+	then application should login
+
+Advantages of Automation: 
+1. Accurancy - exact result
+2. Less man power and time-saving - Productivity
+3. Detects bugs earlier
+4. Proper reporting.
+5. Reduces documentation work
+6. Increased Test coverage
+7. Immediate feedback
+8. Cost saving
+9. Customer satisfaction
+10. 24*7 Test execution
+11. Easy data driven testing
+12. Reuasbility of test scripts
+13. Testing on multiple platforms in parallel.
+
+Criteria for Automation Test Cases:
+1. Complexity - the less complex a test case, the more feasible it is for automation.
+2. Risk - the higher the risk of a test case for product quality and functionality, the higher priority it should
+		be given for automation.
+3. Stability - the more stable a test cases, the less maintenance it requires for automation.
+4. Frequency - The more frequent the test case is, the more suitable for automation.
+
+Difference between Manual Testing and Automation Testing:
+
+1.Manual testing: testcase are executed by human tester
+  Automation: test scripts are executed by the software tools.
+
+Processing Time: 1) Manual testing is time consuming
+		2) Automation is faster than manual
+
+Investment: 1) Investment is required for human resource
+	    2) Automation tools and automated engineers
+
+Reliability: 1) Manual tetsing is not reliable due to posibility of manual error
+	     2) Automation is more reliable due to use of automation tools and scripts
+
+Framework requirement: 1) Manual testing doesn't use any framework
+			2) Automation uses frameworks (POM,Data driver(testNG),BDD,Keyword etc.,)
+
+Performance Testing: 1) In manual not possible
+		     2) We can do in automation 

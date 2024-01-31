@@ -1,0 +1,65 @@
+Day: 20
+-------
+How to create a new Java Project? 
+Maven introduction 
+Create a new Maven Project
+How to convert a Java project to a Maven Project? 
+Debug & Run java code
+Importing project in Eclipse
+What is POM.xml?
+Adding Dependencies to POM.xml
+
+
+What is Maven?
+	Build tool provided by Apache Software.
+
+Why maven? 
+	1. You need to manually dowmload jar files for 3rd party dependency.
+	2. version update, we need to manually change it. 
+
+
+When we create a maven project pom.xml will be created - pom.xml helps you to control the project.
+
+Project Object Model - pom
+
+2 things:
+	1. Dependencies - download 3rd party lib.
+	2. plugins - configuration (compile and run as Maven)
+
+2. Generate Report 
+3. Packaging
+
+
+1. src/main/java --> development source code. Code developed by developer.
+2. src/main/resource --> 3rd party external resource that developers will be using.
+3. src/test/java --> tester will write test scripts. 
+4. src/test/resource -->  3rd party external resource that tester will be using.
+
+How it works internally:
+	- Inside <dependencies> tag we will sepcify all the jar files we need.
+	- Maven local repo will be created and store all the jar files from the remote.
+	- Version update -> remove older version from  local and dowmload the latest version from remote. 
+
+To convert Java projecr to Maven:
+Right click on project -> Configure -> Convert to Maven
+
+To debug:
+
+First have breakpoints --> Double click on the line number 
+DebugAs -> Java Application
+To go to the next line -> Fn + F6 
+
+To import maven project:
+	File -> import -> Maven -> Existing maven project -> choose the project location -> Finish 
+
+To import java project:
+	File -> import -> General -> Existing project into workspace -> choose the project location -> Finish
+
+Assessment:
+
+Open the browser of your choice
+Launch the url "https://demoblaze.com/index.html#"
+Choose Laptops 
+Select the first Laptop from the result
+Proceed with Add to Cart
+Attach the output screenshot.

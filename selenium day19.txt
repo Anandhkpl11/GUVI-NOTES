@@ -1,0 +1,52 @@
+Day 19:
+------
+HTML Element Basics
+Selenium Locators-id Selector,Class Selector,Tag Selector,Xpath.
+Learn to create UI Attributes Locators on Websites.
+Inspecting elements in browser-id, name,, link text,Partial LinkText class Name,Tag.
+Introduction to Selectorshub
+
+HTML - HyperText Markup Language.
+
+<> -- tags
+
+<html> -- open tag
+</html> -- close tag 
+
+<html> 
+ <head>la
+ </head>
+ <body>
+	<div> </div>
+	<a> </a>
+	<input> </input>
+ </body>
+</html> 
+
+DOM - Document Object Model
+
+<a> </a> -- hyperlinks 
+
+text:
+
+<a href="/login" class="ico-login">Log in</a>
+
+<a> </a> - tag
+href and class - attributes of the tag
+"ico-login" - attribute
+Log in - link text 
+
+
+id, class --
+
+Browser navigation:
+
+navigate()
+	to() -- to pass the url
+	forward() -- to go forward
+	back() -- to go backward
+	refresh() -- to refresh page
+
+getTitle() -- title of the current page
+getText() -- visible text of the element
+getCurrentURL() -- current URL of the page

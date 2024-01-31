@@ -15,8 +15,8 @@ Apache -> Powerful office suite
 
 WriteExcel:
 -----------
-XSSFWorkbook book = new XSSFWorkbook();
-		XSSFSheet sheet = book.createSheet();
+        XSSFWorkbook book = new XSSFWorkbook();
+	XSSFSheet sheet = book.createSheet();
 		
 		Object[][] data = {
 				
@@ -33,7 +33,7 @@ XSSFWorkbook book = new XSSFWorkbook();
 			XSSFRow row = sheet.createRow(rowCount++);	
 			
 			int columnCount=0;
-			
+				
 			for(Object col: row1) {
 				
 				XSSFCell cell = row.createCell(columnCount++);

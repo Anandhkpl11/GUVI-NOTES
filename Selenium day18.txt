@@ -1,0 +1,109 @@
+Day -18:
+--------
+What is Selenium Tool?
+Selenium 3 and 4 differences
+Use of Selenium Tool in Automation
+Features of Selenium Tool
+Selenium Components and Architecture
+
+What is Selenium Tool?
+-Automates browser (only web app can be tested)
+-Created by Jason Huggins in 2004. Initially named as JavaScriptTestRunner later chamged as Seleium Core.
+
+Why we go for Selenium?
+	- Very popular, free and open source.
+	- Language support (Java,Python,Ruby,C#,JavaScript etc.,)
+	- Automating Web application (Basic to advanced)
+	- Large Community Support
+	- Cross browser compatibility (Supports all browser)
+	- Platform compatibility
+	- Integration with other framework and libraries(TestNG,JUnit,POI,ExtentReport etc.,)
+
+Selenium 3 Architecture:
+
+Client
+Java -> JSON Wire Protocal -> Server Webdriver -> Web Browser 
+(Open the browser) 
+
+JSON Wire Protocal --> transfers data between client and server.
+
+Chrome --> ChromeDriver
+Edge --> EdgeDriver
+
+Selenium 4 Architecture:
+
+Client Java -> Server WebDriver -> Web browser
+
+Webdriver is binded with W3C protocol 
+
+W3C Protocol - stands for World Wide Web Consortium
+
+Why? Browser started using first, so selenium also upgraded. 
+
+Advantages:
+	- We can maintain the standard
+	- Stability - we have common protocol between selenium and browser.
+	- Common code for all the browser
+
+Difference between Selenium 3 and 4:
+1. Selenium 3 uses - JSON wire Protocol
+   Selenium 4 uses - W3C Protocol 
+
+Features added:
+	1. Capture screenshot of webelement
+	2. Open new tab on browser
+	3. Open new window on browser
+	4. Object location (get the location of the element) 
+
+Selenium Components:
+--------------------
+1. Selenium IDE 
+2. Selenium Remote Control
+3. Selenium Webdriver
+4. Selenium Grid
+
+1. Selenium IDE 
+	- Used to test application without writing any script.
+	- It's an extension which we add to the browser
+	- To record and playback 
+	- It gives Selenius command
+	- Add-on for FireFox 
+	- It can be converted in many programming languages like Java, C#,Ruby etc.,
+
+2. Selenium Remote Control (RC):
+	- Its the first tool of Selenium Suite
+	- Lets us to write the test scripts with multiple language like Java,Python etc.,
+	- We need to switch on the server 
+
+Test Script  --> RC Server --> Browser 
+	
+	- It interacts with the server first then interacts with the browser.
+
+3. Selenium WebDriver:
+	- Lets us to write the test scripts with multiple language like Java,Python etc.,
+	- No need for any remote server in between
+	- With this we can interact with web browser using webdriver interface 
+
+4. Selenium Grid:
+	- Hub - controls the execution 
+	- node - execution takes places.
+	- It is used for parallel testing or distributive testing
+	- It allows us ti execute the test scripts on different machines at same time.
+	- There is a HUB which controls the execution on various machines called nodes.
+
+
+Hub --> node 1
+    --> node 2 
+
+
+
+
+Client Java -> Server WebDriver -> Web browser
+
+WebdriverManager dependancy -> helps us to access the browser according to the version we have in our system.
+
+
+
+
+
+
