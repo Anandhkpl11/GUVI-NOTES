@@ -1,0 +1,108 @@
+Day:24
+------
+Locators: ID, Name, Frames
+Partial Link Text
+Link Text
+Tag Name
+CSS
+Class Name 
+Xpath
+Difference between Absolute and Relative Xpath
+
+Selenium Locators:
+
+	- To locate web element
+	- We have 8 locators
+
+ID
+Name
+Class name
+Tag name
+Link Text   -- <a>sample text</a>
+Partial Link Text  -- <a>sample text</a>
+Xpath
+CSS selector
+
+
+Xpath:
+	- Its a locator
+	- Why? To locate the exact element
+
+2 types:
+	1. Absolute Xpath
+		- It starts root tag
+		- It starts with single slash (/)
+		- E.g: /html/body/div/div/div/div/div/div[2]/div/form/div/div/div[2]/input
+		- Not used much in real time
+		- Drawback: If we miss any tag in between it will not locate the element.
+
+	2. Relative Xpath
+		- Most preferred
+		- Starts with double slash (//)
+		- Start with the direct tag name.
+
+Attribute based xpath:
+	//tagname[@attribute_name='attribute value']
+	E.g: //input[@id='twotabsearchtextbox']
+
+Text Based Xpath:
+	//tagname[text()='text value']
+	E.g: //a[text()='Fresh']
+
+Contains():
+	//input[contains(@id,'twotabsearch')]
+	//a[contains(text(),'Fresh')]
+
+Collection based xapth:
+	 - encircle any xpath and mention the index value.
+	 - index starts with 1.
+
+	Syntax:
+		(any xpath)[index]
+	E.g: (//input[@class='nav-input nav-progressive-attribute'])[1]
+
+Relation Based Xpath:
+	Axes Xpath or Advanced xpath
+
+Paren to child: 
+	Syntax:
+		//parentXpath/child tagname
+
+		//div[@class='nav-search-field ']/input
+
+Child to parent: 
+	Syntax: 
+		//Child Xpath/parent::parent_tagname
+		Eg: //input[@id='twotabsearchtextbox']/parent::div
+
+GrandParent to GrandChild:
+
+	Syntax:
+		//Grandparent Xpath//GrandChild tagname
+		E.g: //div[@class='nav-fill']//input
+
+GrandChild to GrandParent:
+	Syntax:
+		//GrandChild Xpath/ancestor::Grandparent tagname
+		E.g: //input[@id='twotabsearchtextbox']/ancestor::div
+
+Siblings:
+	Elder to Younger (Top to bottom)
+		Syntax: 	
+			//elder_sibling_xpath/following-sibling::tagname_of_younger_sibling
+			E.g: //label[@for='twotabsearchtextbox']/following-sibling::input
+	
+	Younger to Elder (Bottom to top)
+		Syntax:
+			//younger sibling xpath/preceding-sibling::tagname of the elder sibling
+			E.g: //input[@id='twotabsearchtextbox']/preceding-sibling::label
+
+Cousins:
+	Elder to Younger (Top to bottom)
+		Syntax:
+			//eldercousin xpath/following::tagnameof younger cousin
+			Eg: //input[@id='twotabsearchtextbox']/following::input
+	Younger to Elder (Bottom to Top
+		Syntax: 
+			//younger cousin xpath/preceding::tagname of the elder cousin
+			E.g: //input[@id='nav-search-submit-button']/preceding::input

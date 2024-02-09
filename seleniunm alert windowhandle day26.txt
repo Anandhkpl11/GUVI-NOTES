@@ -1,0 +1,71 @@
+Selenium Target Locators
+------------------------
+
+Windows:
+--------
+ For every new window selenium will give session id.
+
+getWindowHandle() --> only one window.
+getWindowHandles() --> set of window
+
+Index starts with 0. where 0 will be the parent tab.
+
+How to switch to a new window?
+
+-> getWindowHandles return Set
+-> Convert Set to List
+-> Pick the particular window using get(index)
+-> switch to the winow
+-> close or quit
+
+
+NoSuchWindowException
+
+
+Parent window address: BBA12E285206D99A4870E2B8CD5FB610
+Child window: C0B76B6BC582ABCC25EEFFAAA9D27D36
+
+
+Parent window address: E9F98FAAA6B301C7F2805CA300C2BD84
+Child window: 11AAC4C3FB989029E8EA6E0D5561873B
+
+
+Alerts:
+------
+	Simple --> Only one option with the message
+	Confirm --> Two option (Yes or No) with one message
+	Prompt --> Two option, one text box.
+
+Alert is not inspectable.
+
+2 types:
+	Model dialog -- Not inspectable --> written javascript
+	Non-model dialog  --> Inspectable
+
+4 methods:
+accept()
+dismiss()
+getText()
+sendKeys()
+
+1. UnhandledAlertExpection --> Trying to interact with the DOM without closing the alert
+2. NoAlertPresentExpection --> Alert is not present but you are trying to handle it.
+
+Limitation: Snapshot cannot be taken. (Model dialog)
+
+Frames:
+------
+1. id or name
+2. index
+3. webelement
+
+parent to child:
+	using any of the 3 frame methods
+
+child to parent:
+	parentframe()
+
+to switch default content:
+	defaultContent()
+
+

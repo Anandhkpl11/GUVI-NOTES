@@ -1,0 +1,277 @@
+Day:22
+------
+Introduction to Java Programming
+Data Types, Variables
+Conditional Statements
+Loop Statements, Array
+Exception and Error Handling
+OOPs concepts
+
+
+Why Java? 
+	-> Object oriented
+	-> simple and easy	
+	-> Platform Independent
+	-> Write once and Run anywhere
+	-> Lots of libraries available
+
+JDK -> Java development Kit
+	JVM and Jre
+
+JVM -> Java Virtual Machine
+
+JRE -> Set of software that is required to develop the java application
+
+Data types and Variables:
+
+Primitive and Non-primitive  --> String, Array, enum, Interface 
+
+int,float,double,char,boolean,byte,short,long
+
+data_type variable = value;
+
+data_type variable;
+
+variable = value;
+
+-> We cannot use keywords as variable name
+-> Cannot start with a special character
+-> Cannot start with a number
+-> Variables are case sensitive
+-> a-z, A-Z, 0-9
+
+int a;  int A; 
+
+Keywords:
+
+-> Pre-defined meaning. 
+-> Reserved.
+-> 53 
+
+-> class, all the datatypes, all the looping and control statements, access modifiers,void,return,new,this,
+super,final,break.
+
+Operators:
+
+Assignement  --> =,+=,-=,
+Comparision  --> < , > ,<=, >=, ==, !=
+Arithemetic  --> + - * / %
+Unary --> postfix, prefix ++a, a++, --a ,a--
+Logical --> & ,||,!
+Bitwise --> AND, NOT,OR,XOR
+Ternary --> ? :
+
+
+Conditional Statements/ Control flow statement:
+
+Control flow of the program based on the condition.
+
+1. if
+2. if else
+3. nested if
+4. if else ladder
+5. switch case
+
+if(condition){
+
+} else {
+
+}
+
+if(condition){
+
+	if(condtion){
+
+	}
+}
+
+if else ladder:
+
+if(condition){
+
+} else if{
+
+}
+
+switch case:
+
+switch(condition)
+
+case 1: 
+
+break;
+
+default{
+
+}
+
+Loops: 
+
+1. for
+2. while loop
+3. do while
+
+for(intializtion; condition; incerement/decrement){
+
+}
+
+nested for loop. 
+
+	for(   ){
+		for( ){
+		}
+	}
+
+while:
+
+	while(condition){
+		block of code
+	}
+
+do while:
+
+	do{
+		block of code
+
+	} while(condition);
+
+foreach:
+	for(String a : arr_name){
+		sys(a);
+	}
+
+Arrays:
+
+Collection of similar data type value
+Data structure that allows us to store data.
+
+syntax:
+	// declaration
+	data_type[] array_name;
+	// initialization
+	array_name = new int[10];
+
+	int[] arr = new int[10];
+	arr[0]=10;
+	arr[1]=20;
+
+	int[] arr = {10,20,30};
+
+Iterate -> for loop and for each, streams and Lambda expression.
+
+Arrays.stream(arr);
+
+Exception Handeling:
+
+try{
+
+}
+
+catch( ){
+
+}
+
+public void fileOp throws IOexception{
+	
+   
+	FileInputStream file =
+
+}
+
+class a {
+try{
+	fileOp();
+} catch(){
+
+}
+
+throw --> 
+
+public void sample(){
+
+	throw new IOException;
+
+
+}
+
+OOPS concept:
+
+public class class_name{
+
+}
+
+Class_name ref = new Class_constrcutor();
+
+Constructor: 
+	Special method
+	Constructor name will be same as the class name.
+	does not have return type
+
+	public Clac(){
+		sys
+
+	}
+
+	public constrcutor(int a,int b){
+
+	}
+
+Calc obj = new Calc();
+obj.a();
+
+Abstraction
+Inheritance
+Polymorphism
+Encapsulation
+
+Interface
+
+Single   A --> B
+Multiple  A   B  --> C  extends A
+
+A class B as interface
+
+C extends A implements B
+
+pubic void method1();   -- abstract methods 
+
+default void method1(){
+
+
+}
+
+
+Multi level  A --> B --> C
+Hybrid  
+Hyrachical 
+
+One parent and 2 child
+
+
+interface
+
+-- public abstract methods
+-- implemented methods when it's access is given as default
+-- private methods.
+
+Abstraction:
+
+ABstract class --> when it has abstract methods. 
+	public void method();
+	public void method1(){
+
+	}
+
+Polymorphism: 
+Method overloading  - same method name, different parameter list and datatype.
+	same class you can perform method overloading
+Method overriding -- same method with same parameter list.
+	one parent class and one child.
+
+Encapsulation: 
+	Binding of data and method together.
+	through getters and setters method you will access the variable values. 
+
+
+	
+	

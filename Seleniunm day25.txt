@@ -1,0 +1,22 @@
+Day:25
+------
+Web Components: Browser
+TextBox, ListBox, Links
+Check Box, Radio Button, HTML Tables
+Calendars
+RadioButton:
+It will only allow to choose one option
+You can validate using browser commands:
+isDisplayed()
+isSelected()
+isEnabled()
+CheckBox:
+It will aloow to choose multiple options.
+<input id=>Enter text here</input> -- visible text --> text based xpath
+<a>Enter text here</a> -- link text --> partial link text and link text
+WebTables:
+<th> -- table heading
+<tr> -- table row
+<td> -- table data
+Static Table
+Dynamic Table --> We have to get the data using for loop based on row size.

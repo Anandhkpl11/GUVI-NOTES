@@ -1,0 +1,112 @@
+Day: 27
+-------
+Site to practice: https://chercher.tech/practice/explicit-wait-sample-selenium-webdriver
+
+Waits:
+	To address the time difference between the script and the application.
+
+Selenium waits:
+	Implicit wait
+	WebDriver wait 	
+		Explicit wait
+		Fluent wait
+	PageLoadTimeOut
+
+Java wait:
+	Thread.sleep()
+
+Implicit wait:
+	Common wait for all the locators
+		applicable for findelement and findElements
+	Why? To avaid the time delay 
+	Apply it in the begining of the script
+	Once it is set, it is applicable for entire script.
+
+Syntax:
+	driver.manage().timeouts().ImplicitlyWait(Duration.ofSeconds(10));
+
+Java wait:
+
+	Thread.sleep() 	
+		Only for one line of code
+		It will slow down the execution
+		Apply when needed.
+
+PageLoadTimeOut --> To avoid TimeOutException
+
+Syntax: 
+	driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+
+
+Exception related to element click:
+
+ElementClickInterceptedExpection
+ElementClickInterruptedException
+
+1. Action class click or JsClick
+2. Explicit wait --> elementToBeClickable
+
+WebDriver wait:
+
+Explicit wait:
+	It will allow your code to halt the program execution of freeze the thread until
+the condition gets statisfied.
+	As long as the condition is false, it will keep trying.
+
+Syntax:
+	WebDriver wait = new WebDriver(driver, Duration.ofSeconds(10));
+	wait.until(ExpectedCondtions.visibilityOf(webelement));
+
+Fluent wait:
+	Fluentwait instance defines the maximum amount of time for a condition, as well as
+the frequency with which to check the condition.
+
+Syntax:
+	Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(5)).pollingEvery(Duration.ofMillis(200));
+		
+		wait.until(ExpectedConditions.elementToBeClickable(button));
+
+To take screenshot:
+-------------------
+
+// Convert webdriver object to take screenshot
+TakesScreenshot screenshot = ((TakesScreenshot) driver);
+
+// Call getScreeshotAs method to create the image file
+File source = screenshot.getScreenshotAs(OutputType.FILE);
+
+// Mention the destination
+File dest = new File("D:\\EclipseClass\\ExcelFileOperation\\snap\\Screenshot1.png");
+
+// Copy from source to destination
+FileUtils.copyFile(source, dest);
+
+
+Shadow:
+-------
+<shadow-root> 
+</shadow-root>
+
+Shadow class ---> we have a seperate dependency. 
+
+
+Element will not be inspect with the driver we cannot locate.
+
+Dependency:
+
+		<dependency>
+			<groupId>io.github.sukgu</groupId>
+			<artifactId>automation</artifactId>
+			<version>0.1.4.1</version>
+		</dependency>
+
+Syntax: 
+	Shadow shadow = new Shadow(driver);
+		shadow.setImplicitWait(10);
+		shadow.findElementByXPath(" ");
+
+DOM freeze: 
+
+setTimeout(function(){debugger;},5000);
+
+

@@ -1,0 +1,70 @@
+Day: 23
+-------
+Selenium Methods and Actions
+Handling Keyboard & Mouse Events
+Click & Hold 
+Context Click 
+Drag and drop
+Mouse Over 
+
+Mouse Events: Actions class
+
+--> It will not throw any exception.
+
+Shortcut for inspect: Ctrl + Shift + I
+
+moveToElement() 
+	- Mouse Hover
+	- To scroll
+
+To scroll using JavaScriptExecutor:
+
+	JavascriptExecutor js = (JavascriptExecutor) driver;
+	js.executeScript("arguments[0].scrollIntoView();",contactUs);
+
+Frame:
+
+Throws expection: 
+	NoSuchFrameExpection
+
+	3ways:
+		frame index
+		frame name
+		frame xpath
+
+5 frames --> 3rd frame
+
+frame(3);
+frame("demo-frame");
+
+ele = "//iframe[@class='demo-frame']";
+
+frame(ele);
+
+
+MouseHover
+Scroll   -- moveToElement()
+Double click -- doubleClick()
+Right click  -- contextClick()
+Sort   -- draganddrop()
+Select -- clickAndHold()
+
+keysUP() keysDown() release
+
+
+
+Drop down:
+
+<div> - normal way inspect.
+<select> - Select class 
+
+
+
+Attribute based xpath:
+//tagname[@attribute='value of the attribute']
+
+text based xpath:
+//tagname[text()='Create new account']
+
+index based xpath:
+(//tagname[text()='Create new account'])[0]
