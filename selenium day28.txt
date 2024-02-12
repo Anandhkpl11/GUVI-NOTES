@@ -1,0 +1,31 @@
+Day: 28
+-------
+POM Design Rules
+What is POM
+Why POM?
+Advantages of POM
+Creating POM Tests
+What is Page Factory?
+Creating Tests with Page Factory
+Implementation of Test Cases using POM Framework
+
+Page Object Model: It's not a framework, its a design pattern
+
+=> Design pattern for UI automation framework
+=> Its similar techniques like a UI developer design their screen
+=> For each page we will write script.
+
+Eg: Login fnc., 
+
+	2 pages -< HomePage and LoginPage
+		2 java class -> Homepage.java  LoginPage.java
+
+Ecah page -> represented as a class
+Each webelement in the page -> represented as a properties of the class
+
+4 components (We will be creating 4 packages):
+
+1. base --> Project Specification methods (Launching the browser, loading the url and closing the browser)
+2. pages  --> Homepage.java  LoginPage.java
+3. utils  --> All the common codes that is going to repeat more than once e.g: Reading the excel, sendkeys, click, explicit wait etc.,
+4. test  --> Maintain the testcasec eg: TC001_Logintest.java TC002_SignupTest.java TC003_Add_Item_To_Cart.java
