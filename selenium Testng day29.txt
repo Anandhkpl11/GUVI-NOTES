@@ -1,0 +1,29 @@
+Parametrization via flat file:
+
+Step 1: Create a file with .properties extension (create a prop file)
+Step 2: Add data with key and value (E.g: url=https://google.com/)
+Step 3: In test class  use FileReader to locate the file with location
+Step 4: Use Properties class to load the file.
+Step 5: Use getProperty() with key to get the property value of the key.
+
+
+Parameterization using DataProvider: 
+
+	We need TestNg to use @DataProvider annotation
+
+2 things required to work with testng: 
+
+1. TestNG dependency from mvn repo:
+<dependency>
+	    <groupId>org.testng</groupId>
+	    <artifactId>testng</artifactId>
+	    <version>7.9.0</version>
+	</dependency>
+
+2. TestNG for Eclipse plugin
+
+Help -> Eclipse marketplace -> search for testng -> TestNG for Eclipse
+
+3. Add TestNg to build path
+
+Right click on project -> build path -> configure build path -> Libraries -> Add Library -> TestNG -> Next -> Finish

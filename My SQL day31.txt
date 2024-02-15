@@ -1,0 +1,353 @@
+package day31;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+public class JdbcDemo {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// Step 1: Database connection details
+		
+		String db_url ="jdbc:mysql://localhost:3306/";
+		String user="root";
+		String password="root";
+		
+		// Step 2: Establish the connection
+		
+		try {
+			Connection connection=DriverManager.getConnection(db_url, user, password);
+			
+		// Step 3: Check connection sucessful
+			
+				if(connection!=null) {
+					
+					System.out.println("Connection sucessfull");
+				} else {
+					
+					System.out.println("Connection unsucessfull");
+				}
+			
+				// Step 4: Perform the Operation
+				
+				Statement stmt = connection.createStatement();
+				String createDB ="create database db_demo1";
+				String use="Use db_demo1";
+				String createTable="create table demo_table (rollno int,firstName varchar(20),marks int)";
+				String select ="Select * from demo_table";
+				String insert ="insert into demo_table values (107,'Jun',65),"
+						+ "(108,'Ron',85),"
+						+ "(109,'Tony',35)";
+				//String update ="update studentMarks set rollno=106 where rollno=105";
+				
+				// create db
+				
+				stmt.execute(createDB);
+				
+				
+				// use db
+				
+				stmt.execute(use);
+				
+				//create table
+				
+				stmt.execute(createTable);
+				
+				// insert data
+				
+				stmt.executeUpdate(insert);
+				
+				// update the data
+				
+				//stmt.executeUpdate(update);
+				
+				// Selecting the data
+				ResultSet rs = stmt.executeQuery(select);
+				
+				// iterate result set and print
+				
+				while(rs.next()) {
+					
+					System.out.println(rs.getInt("rollno")+" "+rs.getString("firstName")+" " +rs.getInt("marks"));
+					
+				}
+				
+				// close the connection
+				
+				connection.close();
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+
+		}
+		
+	}
+}
+Day: 31
+-------
+Introduction to Database -MYSQL
+Installation of MYSQL Server 
+Use MySql on cmd and Workbench.
+Queriy Excecution-DDL& DML 
+Java Database connectivity(JDBC)
+
+https://dev.mysql.com/downloads/mysql/
+
+Database: Collection of tables. Table id collection of data.
+
+MySQL - My Structured Queried Language.
+
+CRUD -> Create Read Update Delete
+
+SQL: Query language.
+MySql -> Relational database that uses SQL to query a database.
+
+What is MYSQL Database?
+	-> It's a relational database management system to store and manage the entire data.
+	-> Create database then data insertion, updation, deletion etc.,
+
+2 languages:
+	DDL commands   --> Data Definition language
+	DML commands   -> Data Manipulation language
+
+DDL : Structure the data
+	
+	1. Create --> databases and tables
+	2. Alter  --> modify the structure of the exsisting table
+	3. Drop   --> deletes the entire table including the structure
+	4. Truncate --> delete the data, structure will remain. 
+
+DML : Retrive the value and work with it.
+
+	1. Select  --> retrive the data from table based on the condition provided.
+	2. Update --> change the exsisting value. 
+	3. delete --> delete the row of data
+	4. Insert --> insert/add data into the table created.
+	5. Merge  --> merge the rows/cols.
+
+Step 1: Create Database
+		create database dbname;
+
+Step 2: Switch to your database
+		Use dbname;
+
+Step 3: Create a table
+		create table studentMarks (
+		rollno int,
+        	firstName varchar(25),
+        	marks int);
+
+show table; --> to display the tables present in database.
+
+Step 4: Enter data to the table
+		insert into studentMarks values (101,'John',80);
+		insert into studentMarks values (102,'Henry',50),
+						(103,'Ron',85),
+						(104,'Tony',35);
+
+Step 5: Select the data
+		Select * from studentMarks;   --> select all the data.
+		Select firstName from studentMarks where marks <=50;   --> select the name of the students whose marks is equal to and below than 50.
+
+salary DECIMAL(10,2)
+
+select * from studentMarks where firstname like 'J%';  --> select the student whose name starts with 'J'
+
+select * from studentMarks order by marks desc;  -->> order the data selection respective to marks in descending.
+
+select avg(marks) from studentMarks;   --> to get the average of that column
+
+select min(marks) from studentMarks;  --> to get the minimum value of that column
+
+select max(marks) from studentMarks;  --> to get the minimum value of that column
+
+truncate table studentMarks;   --> delete the data and keeps the structure
+
+drop table studentMarks;  --> deletes the entire table along with the struture. 
+
+foreign key
+primary key  --> 
+unique 
+not null
+work two tables.
+Join 
+
+JDBC: Java Database Connectivity
+
+	Java API allows java program to interact with database.
+
+Setp-up JDBC :
+
+	Dependency from maven repo --> jdbc driver --> MySQL connector java -> add to pom.xml
+
+<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.33</version>
+</dependency>
+
+insert into studentMarks values (105,'Jun',65);
+
+update studentMarks set rollno=106 where rollno=105;
+
+
+
+Day: 31
+-------
+Introduction to Database -MYSQL
+Installation of MYSQL Server 
+Use MySql on cmd and Workbench.
+Queriy Excecution-DDL& DML 
+Java Database connectivity(JDBC)
+
+https://dev.mysql.com/downloads/mysql/
+
+Database: Collection of tables. Table id collection of data.
+
+MySQL - My Structured Queried Language.
+
+CRUD -> Create Read Update Delete
+
+SQL: Query language.
+MySql -> Relational database that uses SQL to query a database.
+
+What is MYSQL Database?
+	-> It's a relational database management system to store and manage the entire data.
+	-> Create database then data insertion, updation, deletion etc.,
+
+2 languages:
+	DDL commands   --> Data Definition language
+	DML commands   -> Data Manipulation language
+
+DDL : Structure the data
+	
+	1. Create --> databases and tables
+	2. Alter  --> modify the structure of the exsisting table
+	3. Drop   --> deletes the entire table including the structure
+	4. Truncate --> delete the data, structure will remain. 
+
+DML : Retrive the value and work with it.
+
+	1. Select  --> retrive the data from table based on the condition provided.
+	2. Update --> change the exsisting value. 
+	3. delete --> delete the row of data
+	4. Insert --> insert/add data into the table created.
+	5. Merge  --> merge the rows/cols.
+
+Step 1: Create Database
+		create database dbname;
+
+Step 2: Switch to your database
+		Use dbname;
+
+Step 3: Create a table
+		create table studentMarks (
+		rollno int,
+        	firstName varchar(25),
+        	marks int);
+
+show table; --> to display the tables present in database.
+
+Step 4: Enter data to the table
+		insert into studentMarks values (101,'John',80);
+		insert into studentMarks values (102,'Henry',50),
+						(103,'Ron',85),
+						(104,'Tony',35);
+
+Step 5: Select the data
+		Select * from studentMarks;   --> select all the data.
+		Select firstName from studentMarks where marks <=50;   --> select the name of the students whose marks is equal to and below than 50.
+
+salary DECIMAL(10,2)
+
+select * from studentMarks where firstname like 'J%';  --> select the student whose name starts with 'J'
+
+select * from studentMarks order by marks desc;  -->> order the data selection respective to marks in descending.
+
+select avg(marks) from studentMarks;   --> to get the average of that column
+
+select min(marks) from studentMarks;  --> to get the minimum value of that column
+
+select max(marks) from studentMarks;  --> to get the minimum value of that column
+
+truncate table studentMarks;   --> delete the data and keeps the structure
+
+drop table studentMarks;  --> deletes the entire table along with the struture. 
+
+foreign key
+primary key  --> 
+unique 
+not null
+
+work two tables.
+Join 
+
+JDBC: Java Database Connectivity
+
+	Java API allows java program to interact with database.
+
+Setp-up JDBC :
+
+	Dependency from maven repo --> jdbc driver --> MySQL connector java -> add to pom.xml
+
+<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.33</version>
+</dependency>
+
+insert into studentMarks values (105,'Jun',65);
+
+update studentMarks set rollno=106 where rollno=105;
+
+
+MySql WorkBench commands used in session:
+—-----------------------------------------------------------
+
+create database studentList;
+Use studentList;
+
+create table studentMarks (
+		rollno int,
+        firstName varchar(25),
+        marks int);
+        
+show tables;
+        
+insert into studentMarks values (101,'John',80);
+insert into studentMarks values (102,'Henry',50),
+								(103,'Ron',85),
+								(104,'Tony',35);
+                                
+Select * from studentMarks;
+
+Select firstName from studentMarks where marks <=50;
+
+Alter table studentMarks ADD internalMarks decimal(3,2);
+
+Alter table studentMarks drop internalMarks;
+
+Alter table studentMarks rename column firstName to studentName;
+
+update studentMarks set marks=40 where studentName='Tony';
+
+delete from studentMarks where rollno=103;
+
+truncate table studentMarks;
+
+drop table studentMarks;
+
+select * from studentMarks where firstname like 'J%';
+
+select * from studentMarks order by marks desc;
+
+select avg(marks) from studentMarks;
+
+insert into studentMarks values (110,null,80);
+
+
+

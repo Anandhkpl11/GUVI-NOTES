@@ -6,3 +6,5 @@ git task https://docs.google.com/document/d/1S9MP5ZqhoPYfh3Oixg3bpEXB_QDZ8tVhBtu
 Regex  https://docs.google.com/spreadsheets/d/1U5ZLSqILIYbfHbEMpzpEuOYY3PlvrlT_pZUEncJUSVQ/edit#gid=0
 
 codekata and webkata link  https://drive.google.com/drive/u/0/folders/1tIjxVC7U9AqXXQCVTfm_3WwwXf1CQVu6
+
+sql   https://docs.google.com/document/d/1kN1b3G_uCJXyNnug4ycNX45ay4SV6Y8x54DliTYMK2I/edit

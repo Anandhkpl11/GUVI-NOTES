@@ -1,0 +1,34 @@
+Day: 30
+-------
+Installing AutoIT
+Components of AutoIT
+Using FinderTool
+AutoIT commands
+Creating Scripts in AutoIT
+Creating executable files
+Identify windows elements
+How to write a code in Autoit editor
+Compiling and converting Autoit file into .exe file
+Running AutoIT Scripts from Selenium
+AutoIT:
+-> Automating window element cannot be done using selenium
+-> To communicate with desktop element we can use AutoIT.
+-> It's small tool, that has it's own scripting language to interact with Desktop element, to
+target
+any element available in the desktop.
+Why?
+Selenium can only automate browser elements and not desktop element.
+Commands/Methods:
+1. ControlClick() --> simulate a mouse click on windows element.
+2. ControlFocus() --> sends a command to specific control of a window.
+3. ControlGetText() --> Retreive the text
+4. WinClose
+5. WinExit
+6. Sleep --> to provide delay
+7. WinActive
+8. ControlSetText() --> simulate sendkeys
+Au3Info_x64 -->Finder Tool
+SciTE --> Script editor
+Extension for script file -> .au3
+To convert script to executable -> right click on script and compile.
+C:\Users\Admin\OneDrive\Desktop\JAT15WD\AutoITScript.exe
